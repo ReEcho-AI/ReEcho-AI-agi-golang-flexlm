@@ -6,4 +6,6 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/
+	"github.com/sashabaranov/go-openai"
+
+	"github.com/zawakin/lightweight-
