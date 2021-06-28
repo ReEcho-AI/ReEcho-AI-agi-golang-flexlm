@@ -9,4 +9,5 @@ import (
 	"github.com/sashabaranov/go-openai"
 
 	"github.com/zawakin/lightweight-agi/datastore"
-	"github.com/zawakin/lightweight-a
+	"github.com/zawakin/lightweight-agi/datastore/providers/inmemory"
+	"github.com/zawakin/lightweigh
