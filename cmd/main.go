@@ -17,4 +17,5 @@ import (
 )
 
 var (
-	
+	// defaultOpenAICompletionModel = openai.GPT3Dot5Turbo
+	defaultOpenAI
