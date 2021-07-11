@@ -11,4 +11,5 @@ import (
 	"github.com/zawakin/lightweight-agi/datastore"
 	"github.com/zawakin/lightweight-agi/datastore/providers/inmemory"
 	"github.com/zawakin/lightweight-agi/examples/agi"
-	"github.com/zawakin/lightweight-agi/exam
+	"github.com/zawakin/lightweight-agi/examples/prompts"
+	"github.com/zawakin/lightweight-agi/llmclient/provider"
