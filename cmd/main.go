@@ -13,3 +13,8 @@ import (
 	"github.com/zawakin/lightweight-agi/examples/agi"
 	"github.com/zawakin/lightweight-agi/examples/prompts"
 	"github.com/zawakin/lightweight-agi/llmclient/provider"
+	"github.com/zawakin/lightweight-agi/prompt"
+)
+
+var (
+	
