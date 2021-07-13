@@ -18,4 +18,9 @@ import (
 
 var (
 	// defaultOpenAICompletionModel = openai.GPT3Dot5Turbo
-	defaultOpenAI
+	defaultOpenAICompletionModel = openai.GPT4
+
+	verbose = true
+)
+
+func init() {
