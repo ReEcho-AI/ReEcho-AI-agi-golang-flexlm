@@ -26,4 +26,11 @@ var (
 func init() {
 	// load dotenv
 	if err := godotenv.Load(); err != nil {
-		panic
+		panic(err)
+	}
+
+	// disable log prefix
+	log.SetFlags(0)
+}
+
+func mai
