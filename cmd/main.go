@@ -24,3 +24,6 @@ var (
 )
 
 func init() {
+	// load dotenv
+	if err := godotenv.Load(); err != nil {
+		panic
