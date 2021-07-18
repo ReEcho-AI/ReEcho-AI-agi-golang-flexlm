@@ -38,3 +38,7 @@ func main() {
 	openAIAPIKey := os.Getenv("OPENAI_API_KEY")
 	if openAIAPIKey == "" {
 		log.Fatal("OPENAI_API_KEY is required")
+	}
+	openAIOrgID := os.Getenv("OPENAI_ORG_ID")
+
+	ctx := contex
