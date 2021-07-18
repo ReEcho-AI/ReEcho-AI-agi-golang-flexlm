@@ -36,4 +36,5 @@ func init() {
 func main() {
 	// read env
 	openAIAPIKey := os.Getenv("OPENAI_API_KEY")
-	i
+	if openAIAPIKey == "" {
+		log.Fatal("OPENAI_API_KEY is required")
