@@ -33,4 +33,7 @@ func init() {
 	log.SetFlags(0)
 }
 
-func mai
+func main() {
+	// read env
+	openAIAPIKey := os.Getenv("OPENAI_API_KEY")
+	i
