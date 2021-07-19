@@ -41,4 +41,7 @@ func main() {
 	}
 	openAIOrgID := os.Getenv("OPENAI_ORG_ID")
 
-	ctx := contex
+	ctx := context.Background()
+
+	// ==== Create OpenAI client ====
+	openAIConfig := op
