@@ -44,4 +44,5 @@ func main() {
 	ctx := context.Background()
 
 	// ==== Create OpenAI client ====
-	openAIConfig := op
+	openAIConfig := openai.DefaultConfig(openAIAPIKey)
+	if openAI
