@@ -45,4 +45,7 @@ func main() {
 
 	// ==== Create OpenAI client ====
 	openAIConfig := openai.DefaultConfig(openAIAPIKey)
-	if openAI
+	if openAIOrgID != "" {
+		openAIConfig.OrgID = openAIOrgID
+	}
+	openaiClient := 
