@@ -48,4 +48,5 @@ func main() {
 	if openAIOrgID != "" {
 		openAIConfig.OrgID = openAIOrgID
 	}
-	openaiClient := 
+	openaiClient := openai.NewClientWithConfig(openAIConfig)
+	completio
