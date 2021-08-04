@@ -49,4 +49,4 @@ func main() {
 		openAIConfig.OrgID = openAIOrgID
 	}
 	openaiClient := openai.NewClientWithConfig(openAIConfig)
-	completio
+	completionClient := provider.NewOpenAICompletionClient(openaiClient, defaultOpenAICo
