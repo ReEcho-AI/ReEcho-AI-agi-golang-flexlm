@@ -49,4 +49,5 @@ func main() {
 		openAIConfig.OrgID = openAIOrgID
 	}
 	openaiClient := openai.NewClientWithConfig(openAIConfig)
-	completionClient := provider.NewOpenAICompletionClient(openaiClient, defaultOpenAICo
+	completionClient := provider.NewOpenAICompletionClient(openaiClient, defaultOpenAICompletionModel)
+	embeddingClient := provider
