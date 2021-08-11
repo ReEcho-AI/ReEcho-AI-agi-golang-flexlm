@@ -52,4 +52,5 @@ func main() {
 	completionClient := provider.NewOpenAICompletionClient(openaiClient, defaultOpenAICompletionModel)
 	embeddingClient := provider.NewOpenAIEmbeddingClient(openaiClient)
 
-	// ==== Create data store p
+	// ==== Create data store provider ====
+	dataStore := datastore.NewDataStore(inmemory.NewInMemoryDataStore
