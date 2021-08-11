@@ -50,4 +50,6 @@ func main() {
 	}
 	openaiClient := openai.NewClientWithConfig(openAIConfig)
 	completionClient := provider.NewOpenAICompletionClient(openaiClient, defaultOpenAICompletionModel)
-	embeddingClient := provider
+	embeddingClient := provider.NewOpenAIEmbeddingClient(openaiClient)
+
+	// ==== Create data store p
