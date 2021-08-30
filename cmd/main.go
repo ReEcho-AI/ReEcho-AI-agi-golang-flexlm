@@ -56,4 +56,6 @@ func main() {
 	dataStore := datastore.NewDataStore(inmemory.NewInMemoryDataStore(), embeddingClient)
 
 	// === Create Prompt Runner ====
-	ru
+	runner := prompt.NewPromptRunner(completionClient, verbose)
+
+	// ==== R
