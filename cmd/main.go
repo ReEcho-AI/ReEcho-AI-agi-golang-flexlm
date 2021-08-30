@@ -53,4 +53,7 @@ func main() {
 	embeddingClient := provider.NewOpenAIEmbeddingClient(openaiClient)
 
 	// ==== Create data store provider ====
-	dataStore := datastore.NewDataStore(inmemory.NewInMemoryDataStore
+	dataStore := datastore.NewDataStore(inmemory.NewInMemoryDataStore(), embeddingClient)
+
+	// === Create Prompt Runner ====
+	ru
