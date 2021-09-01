@@ -59,4 +59,7 @@ func main() {
 	runner := prompt.NewPromptRunner(completionClient, verbose)
 
 	// ==== Run AGI agent ====
-	agiAgent := agi.NewAGIAgent(runner,
+	agiAgent := agi.NewAGIAgent(runner, dataStore)
+
+	// Define Global Objective of this AGI
+	objective := p
