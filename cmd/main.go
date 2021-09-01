@@ -63,4 +63,4 @@ func main() {
 
 	// Define Global Objective of this AGI
 	objective := prompts.Objective("Define the feature of good GPT prompt.")
-	i
+	if err := agiAgent.RunAGIByObjective(ctx, objective); e
