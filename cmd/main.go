@@ -62,4 +62,5 @@ func main() {
 	agiAgent := agi.NewAGIAgent(runner, dataStore)
 
 	// Define Global Objective of this AGI
-	objective := p
+	objective := prompts.Objective("Define the feature of good GPT prompt.")
+	i
