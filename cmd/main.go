@@ -58,4 +58,5 @@ func main() {
 	// === Create Prompt Runner ====
 	runner := prompt.NewPromptRunner(completionClient, verbose)
 
-	// ==== R
+	// ==== Run AGI agent ====
+	agiAgent := agi.NewAGIAgent(runner,
