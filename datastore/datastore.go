@@ -28,3 +28,40 @@ func NewDataStore(provider DataStoreProvider, embeddingClient llmclient.Embeddin
 
 func (d *DataStore) Upsert(ctx context.Context, documents []model.Document, chunkTokenSize *int) ([]model.DocumentID, error) {
 	chunks := make(map[model.DocumentID][]model.DocumentChunk)
+	for _, doc := range documents {
+		documentChunks, err := services.CreateDocumentChunks(ctx, d.embeddingClient, &doc, *chunkTokenSize)
+		if err != nil {
+			return nil, err
+		}
+		chunks[doc.ID] = documentChunks
+	}
+
+	ids, err := d.provider.Upsert(ctx, chunks, chunkTokenSize)
+	if err != nil {
+		return nil, err
+	}
+
+	return ids, nil
+}
+
+func (d *DataStore) Query(ctx context.Context, queries []model.Query) ([]model.QueryResult, error) {
+	queryTexts := make([]string, 0, len(queries))
+	for _, query := range queries {
+		queryTexts = append(queryTexts, query.Query)
+	}
+
+	queryEmbeddings, err := d.embeddingClient.EmbedTexts(ctx, queryTexts)
+	if err != nil {
+		return nil, err
+	}
+
+	queryWithEmbeddings := make([]model.QueryWithEmbedding, len(queries))
+	for i, query := range queries {
+		queryWithEmbeddings[i] = model.QueryWithEmbedding{
+			Query:     query,
+			Embedding: queryEmbeddings[i],
+		}
+	}
+
+	return d.provider.Query(ctx, queryWithEmbeddings)
+}
