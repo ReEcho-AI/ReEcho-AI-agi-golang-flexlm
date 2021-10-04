@@ -5,4 +5,8 @@ import (
 	"math"
 	"sort"
 
-	"github.com/zawakin/lightweight-agi/da
+	"github.com/zawakin/lightweight-agi/datastore"
+	"github.com/zawakin/lightweight-agi/model"
+)
+
+var _ data
