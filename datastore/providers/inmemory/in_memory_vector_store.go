@@ -12,4 +12,8 @@ import (
 var _ datastore.DataStoreProvider = (*InMemoryDataStore)(nil)
 
 type InMemoryDataStore struct {
-	data map[model.DocumentChunkID]model.Document
+	data map[model.DocumentChunkID]model.DocumentChunk
+}
+
+func NewInMemoryDataStore() *InMemoryDataStore {
+	ret
