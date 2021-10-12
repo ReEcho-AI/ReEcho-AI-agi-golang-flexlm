@@ -9,4 +9,6 @@ import (
 	"github.com/zawakin/lightweight-agi/model"
 )
 
-var _ data
+var _ datastore.DataStoreProvider = (*InMemoryDataStore)(nil)
+
+type InMemory
