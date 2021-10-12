@@ -11,4 +11,5 @@ import (
 
 var _ datastore.DataStoreProvider = (*InMemoryDataStore)(nil)
 
-type InMemory
+type InMemoryDataStore struct {
+	data map[model.DocumentChunkID]model.Document
