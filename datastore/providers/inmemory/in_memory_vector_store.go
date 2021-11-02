@@ -16,4 +16,5 @@ type InMemoryDataStore struct {
 }
 
 func NewInMemoryDataStore() *InMemoryDataStore {
-	ret
+	return &InMemoryDataStore{
+		data: make(map[model.DocumentChunkID]model.Document
