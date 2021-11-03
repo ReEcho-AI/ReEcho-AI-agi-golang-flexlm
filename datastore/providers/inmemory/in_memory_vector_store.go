@@ -17,4 +17,8 @@ type InMemoryDataStore struct {
 
 func NewInMemoryDataStore() *InMemoryDataStore {
 	return &InMemoryDataStore{
-		data: make(map[model.DocumentChunkID]model.Document
+		data: make(map[model.DocumentChunkID]model.DocumentChunk),
+	}
+}
+
+func (s *InMemoryDataStore) Upsert(ctx context.Co
