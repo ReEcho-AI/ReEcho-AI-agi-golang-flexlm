@@ -21,4 +21,4 @@ func NewInMemoryDataStore() *InMemoryDataStore {
 	}
 }
 
-func (s *InMemoryDataStore) Upsert(ctx context.Co
+func (s *InMemoryDataStore) Upsert(ctx context.Context, chunks map[model.DocumentID][]model.DocumentChunk, chunkTok
