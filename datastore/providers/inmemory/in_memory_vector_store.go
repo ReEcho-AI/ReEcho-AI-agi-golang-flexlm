@@ -21,4 +21,5 @@ func NewInMemoryDataStore() *InMemoryDataStore {
 	}
 }
 
-func (s *InMemoryDataStore) Upsert(ctx context.Context, chunks map[model.DocumentID][]model.DocumentChunk, chunkTok
+func (s *InMemoryDataStore) Upsert(ctx context.Context, chunks map[model.DocumentID][]model.DocumentChunk, chunkTokenSize *int) ([]model.DocumentID, error) {
+	var result []m
