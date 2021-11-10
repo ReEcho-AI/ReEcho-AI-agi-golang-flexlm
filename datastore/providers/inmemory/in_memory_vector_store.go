@@ -25,4 +25,8 @@ func (s *InMemoryDataStore) Upsert(ctx context.Context, chunks map[model.Documen
 	var result []model.DocumentID
 	for docID, v := range chunks {
 		for _, chunk := range v {
-		
+			s.data[chunk.ID] = chunk
+		}
+		result = append(result, docID)
+	}
+	
