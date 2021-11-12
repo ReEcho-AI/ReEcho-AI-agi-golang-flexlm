@@ -32,4 +32,5 @@ func (s *InMemoryDataStore) Upsert(ctx context.Context, chunks map[model.Documen
 	return result, nil
 }
 
-func (s *InMemoryDataStore) Query(ctx context.Context, queries []model.QueryWithEmbedding) ([]model.Qu
+func (s *InMemoryDataStore) Query(ctx context.Context, queries []model.QueryWithEmbedding) ([]model.QueryResult, error) {
+	var result []model.QueryRe
