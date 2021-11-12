@@ -29,4 +29,7 @@ func (s *InMemoryDataStore) Upsert(ctx context.Context, chunks map[model.Documen
 		}
 		result = append(result, docID)
 	}
-	
+	return result, nil
+}
+
+func (s *InMemoryDataStore) Query(ctx con
