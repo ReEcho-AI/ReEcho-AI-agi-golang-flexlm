@@ -39,4 +39,9 @@ func (s *InMemoryDataStore) Query(ctx context.Context, queries []model.QueryWith
 		if err != nil {
 			return nil, err
 		}
-		result
+		result = append(result, *r)
+	}
+	return result, nil
+}
+
+func (s *InMemoryDataS
