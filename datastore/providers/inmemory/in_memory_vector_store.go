@@ -44,4 +44,4 @@ func (s *InMemoryDataStore) Query(ctx context.Context, queries []model.QueryWith
 	return result, nil
 }
 
-func (s *InMemoryDataS
+func (s *InMemoryDataStore) query(ctx context.Context, query model.QueryWithEmbedding) (*model.Q
