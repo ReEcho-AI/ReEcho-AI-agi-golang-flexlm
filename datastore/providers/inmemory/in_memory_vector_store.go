@@ -44,4 +44,6 @@ func (s *InMemoryDataStore) Query(ctx context.Context, queries []model.QueryWith
 	return result, nil
 }
 
-func (s *InMemoryDataStore) query(ctx context.Context, query model.QueryWithEmbedding) (*model.Q
+func (s *InMemoryDataStore) query(ctx context.Context, query model.QueryWithEmbedding) (*model.QueryResult, error) {
+	var heap []model.DocumentChunkWithScore
+	topK := query.TopK
