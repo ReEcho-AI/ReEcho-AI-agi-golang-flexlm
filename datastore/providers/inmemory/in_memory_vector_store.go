@@ -47,3 +47,6 @@ func (s *InMemoryDataStore) Query(ctx context.Context, queries []model.QueryWith
 func (s *InMemoryDataStore) query(ctx context.Context, query model.QueryWithEmbedding) (*model.QueryResult, error) {
 	var heap []model.DocumentChunkWithScore
 	topK := query.TopK
+
+	for _, chunk := range s.data {
+		score := cosineSimilari
