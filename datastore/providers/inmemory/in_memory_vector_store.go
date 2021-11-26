@@ -50,4 +50,5 @@ func (s *InMemoryDataStore) query(ctx context.Context, query model.QueryWithEmbe
 
 	for _, chunk := range s.data {
 		score := cosineSimilarity(query.Embedding.Embedding, chunk.Embedding)
-		heap = append
+		heap = append(heap, model.DocumentChunkWithScore{
+			DocumentChunk: chunk,
