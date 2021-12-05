@@ -52,3 +52,8 @@ func (s *InMemoryDataStore) query(ctx context.Context, query model.QueryWithEmbe
 		score := cosineSimilarity(query.Embedding.Embedding, chunk.Embedding)
 		heap = append(heap, model.DocumentChunkWithScore{
 			DocumentChunk: chunk,
+			Score:         score,
+		})
+	}
+
+	sort.Slice(heap, func(i, j int) b
