@@ -63,4 +63,7 @@ func (s *InMemoryDataStore) query(ctx context.Context, query model.QueryWithEmbe
 		heap = heap[:topK]
 	}
 
-	var result []model.Documen
+	var result []model.DocumentChunkWithScore
+	result = append(result, heap...)
+
+	return &mo
