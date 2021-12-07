@@ -59,4 +59,8 @@ func (s *InMemoryDataStore) query(ctx context.Context, query model.QueryWithEmbe
 	sort.Slice(heap, func(i, j int) bool {
 		return heap[i].Score > heap[j].Score
 	})
-	if len(heap) > 
+	if len(heap) > topK {
+		heap = heap[:topK]
+	}
+
+	var result []model.Documen
