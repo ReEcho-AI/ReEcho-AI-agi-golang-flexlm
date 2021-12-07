@@ -56,4 +56,7 @@ func (s *InMemoryDataStore) query(ctx context.Context, query model.QueryWithEmbe
 		})
 	}
 
-	sort.Slice(heap, func(i, j int) b
+	sort.Slice(heap, func(i, j int) bool {
+		return heap[i].Score > heap[j].Score
+	})
+	if len(heap) > 
