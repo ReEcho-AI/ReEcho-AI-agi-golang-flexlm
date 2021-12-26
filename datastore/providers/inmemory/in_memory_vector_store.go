@@ -68,4 +68,10 @@ func (s *InMemoryDataStore) query(ctx context.Context, query model.QueryWithEmbe
 
 	return &model.QueryResult{
 		Query:   query.Query.Query,
-		Results: resul
+		Results: result,
+	}, nil
+
+}
+
+func cosineSimilarity(a, b []float32) float32 {
+	var dotProdu
