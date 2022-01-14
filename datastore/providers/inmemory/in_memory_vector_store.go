@@ -79,4 +79,7 @@ func cosineSimilarity(a, b []float32) float32 {
 	for i := range a {
 		dotProduct += a[i] * b[i]
 		aMagnitude += a[i] * a[i]
-		
+		bMagnitude += b[i] * b[i]
+	}
+
+	aMagnitude = float32(
