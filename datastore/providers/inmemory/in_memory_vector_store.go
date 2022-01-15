@@ -82,4 +82,5 @@ func cosineSimilarity(a, b []float32) float32 {
 		bMagnitude += b[i] * b[i]
 	}
 
-	aMagnitude = float32(
+	aMagnitude = float32(math.Sqrt(float64(aMagnitude)))
+	bMagnitude = float32(math.Sqrt(flo
