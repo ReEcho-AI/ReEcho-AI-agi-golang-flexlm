@@ -12,4 +12,9 @@ type EvaluationTaskInput struct {
 
 type EvaluationTaskOutput struct {
 	Score  int    `json:"score"`
-	Reason string `json:"rea
+	Reason string `json:"reason"`
+}
+
+var (
+	EvaluationTasksPrompt = &prompt.Prompt{
+		Name:        
