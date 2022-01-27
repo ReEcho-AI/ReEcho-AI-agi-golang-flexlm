@@ -17,4 +17,5 @@ type EvaluationTaskOutput struct {
 
 var (
 	EvaluationTasksPrompt = &prompt.Prompt{
-		Name:        
+		Name:        "evaluation tasks",
+		Description: `Evaluate the follow
