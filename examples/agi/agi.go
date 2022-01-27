@@ -126,3 +126,53 @@ func (a *AGIAgent) RunAGIByMilestone(ctx context.Context, milestone prompts.Mile
 
 		var executionOutput prompts.ExecutionOutput
 		err = a.runner.Run(ctx, prompts.ExecutionPrompt, &prompts.ExecutionInput{
+			Objective:       objective,
+			CurrentTask:     task,
+			SolvedTasks:     solvedTasks,
+			RelevantContext: relevantContext,
+		}, &executionOutput)
+		if err != nil {
+			return err
+		}
+
+		result := executionOutput.CurrentTaskResult
+
+		var evaluationTaskOutput prompts.EvaluationTaskOutput
+		err = a.runner.Run(ctx, prompts.EvaluationTasksPrompt, &prompts.EvaluationTaskInput{
+			Objective:  objective,
+			Task:       task,
+			TaskResult: result,
+		}, &evaluationTaskOutput)
+		if err != nil {
+			return err
+		}
+
+		documentID := model.NewDocumentID()
+		_, err = a.dataStore.Upsert(ctx, []model.Document{
+			{
+				ID:   documentID,
+				Text: result.ResultText,
+			},
+		}, &chunkSize)
+		if err != nil {
+			return err
+		}
+
+		var prioritizationOutput prompts.PriorizationOutput
+		err = a.runner.Run(ctx, prompts.PrioritizationPrompt, &prompts.PrioritizationInput{
+			Objective: objective,
+			Tasks:     tasks,
+		}, &prioritizationOutput)
+		if err != nil {
+			return err
+		}
+
+		tasks = prioritizationOutput.Tasks
+
+		time.Sleep(1 * time.Second)
+	}
+
+	log.Printf("Finished executing tasks for objective %s", objective)
+
+	return nil
+}
