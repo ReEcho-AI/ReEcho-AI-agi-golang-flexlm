@@ -59,3 +59,70 @@ func (a *AGIAgent) RunAGIByObjective(ctx context.Context, objective prompts.Obje
 	for _, milestone := range milestones {
 		err := a.RunAGIByMilestone(ctx, milestone)
 		if err != nil {
+			return err
+		}
+	}
+
+	log.Printf("Finished executing tasks for objective %s", objective)
+	return nil
+}
+
+func (a *AGIAgent) RunAGIByMilestone(ctx context.Context, milestone prompts.Milestone) error {
+	objective := milestone.Objective
+
+	var objectiveRefinementOutput prompts.ObjectiveRefinementOutput
+	err := a.runner.Run(ctx, prompts.ObjectRefinementPrompt, &prompts.ObjectiveRefinementInput{
+		Objective: objective,
+	}, &objectiveRefinementOutput)
+	if err != nil {
+		return err
+	}
+
+	objective = objectiveRefinementOutput.RefinedObjective
+
+	var taskCreationOutput prompts.TaskCreationOutput
+	err = a.runner.Run(ctx, prompts.TaskCreationPrompt, &prompts.TaskCreationInput{
+		Objective: objective,
+	}, &taskCreationOutput)
+	if err != nil {
+		return err
+	}
+
+	tasks := taskCreationOutput.Tasks
+
+	var solvedTasks prompts.Tasks
+
+	for i := 0; i < maxTaskIterationCount; i++ {
+		if len(tasks) == 0 {
+			log.Printf("No more tasks to execute for objective %s\n", objective)
+			break
+		}
+
+		task, remain := tasks.PopLeft()
+		taskName := task.Name
+
+		tasks = remain
+
+		queryResults, err := a.dataStore.Query(ctx, []model.Query{
+			{
+				Query: taskName,
+				TopK:  5,
+			},
+		})
+		if err != nil {
+			return err
+		}
+		if len(queryResults) != 1 {
+			return fmt.Errorf("unexpected chunks length: %d", len(queryResults))
+		}
+		queryResult := queryResults[0]
+
+		var relevantContext []prompts.TaskContext
+		for _, chunk := range queryResult.Results {
+			relevantContext = append(relevantContext, prompts.TaskContext{
+				Text: chunk.Text,
+			})
+		}
+
+		var executionOutput prompts.ExecutionOutput
+		err = a.runner.Run(ctx, prompts.ExecutionPrompt, &prompts.ExecutionInput{
