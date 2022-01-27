@@ -10,4 +10,6 @@ type EvaluationTaskInput struct {
 	TaskResult TaskResult `json:"task_result"`
 }
 
-type EvaluationTaskOutput s
+type EvaluationTaskOutput struct {
+	Score  int    `json:"score"`
+	Reason string `json:"rea
