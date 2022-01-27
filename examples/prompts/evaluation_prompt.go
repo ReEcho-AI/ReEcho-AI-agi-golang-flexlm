@@ -7,4 +7,7 @@ import (
 type EvaluationTaskInput struct {
 	Objective  Objective  `json:"objective"`
 	Task       Task       `json:"task"`
-	TaskResult TaskR
+	TaskResult TaskResult `json:"task_result"`
+}
+
+type EvaluationTaskOutput s
