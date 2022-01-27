@@ -4,4 +4,5 @@ import (
 	"github.com/zawakin/lightweight-agi/prompt"
 )
 
-type Eva
+type EvaluationTaskInput struct {
+	Objective  Objective  `json:"o
