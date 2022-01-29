@@ -19,3 +19,6 @@ var (
 	EvaluationTasksPrompt = &prompt.Prompt{
 		Name:        "evaluation tasks",
 		Description: `Evaluate the following task result with score(0-100) based on the task description.`,
+		Template: &prompt.Example{
+			Input: &EvaluationTaskInput{
+			
