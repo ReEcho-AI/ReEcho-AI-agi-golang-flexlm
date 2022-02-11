@@ -21,4 +21,5 @@ var (
 		Description: `Evaluate the following task result with score(0-100) based on the task description.`,
 		Template: &prompt.Example{
 			Input: &EvaluationTaskInput{
-			
+				Objective:  Objective("objective"),
+				Task:       Task{Na
