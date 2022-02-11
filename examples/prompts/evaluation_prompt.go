@@ -22,4 +22,6 @@ var (
 		Template: &prompt.Example{
 			Input: &EvaluationTaskInput{
 				Objective:  Objective("objective"),
-				Task:       Task{Na
+				Task:       Task{Name: "task"},
+				TaskResult: TaskResult{ResultText: "result text"},
+			
