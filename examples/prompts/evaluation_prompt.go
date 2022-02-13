@@ -31,3 +31,6 @@ var (
 			},
 		},
 		Examples: prompt.Examples{
+			{
+				Input: &EvaluationTaskInput{
+					Objective:  Objectiv
