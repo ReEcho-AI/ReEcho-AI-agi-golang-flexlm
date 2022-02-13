@@ -24,4 +24,7 @@ var (
 				Objective:  Objective("objective"),
 				Task:       Task{Name: "task"},
 				TaskResult: TaskResult{ResultText: "result text"},
-			
+			},
+			Output: &EvaluationTaskOutput{
+				Score:  50,
+		
