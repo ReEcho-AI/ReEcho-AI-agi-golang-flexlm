@@ -27,4 +27,7 @@ var (
 			},
 			Output: &EvaluationTaskOutput{
 				Score:  50,
-		
+				Reason: "reason",
+			},
+		},
+		Examples: prompt.Examples{
