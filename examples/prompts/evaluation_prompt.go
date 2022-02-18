@@ -33,4 +33,6 @@ var (
 		Examples: prompt.Examples{
 			{
 				Input: &EvaluationTaskInput{
-					Objective:  Objectiv
+					Objective:  Objective("objective"),
+					Task:       Task{Name: "task-1"},
+					TaskResult: Task
