@@ -39,4 +39,8 @@ var (
 				},
 				Output: &EvaluationTaskOutput{
 					Score:  0,
-		
+					Reason: "This is a bad result because...",
+				},
+			},
+			{
+				Input: 
