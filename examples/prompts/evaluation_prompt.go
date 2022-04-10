@@ -44,4 +44,6 @@ var (
 			},
 			{
 				Input: &EvaluationTaskInput{
-					Objective:  Objective("objectiv
+					Objective:  Objective("objective"),
+					Task:       Task{Name: "task"},
+					TaskResult: TaskRe
