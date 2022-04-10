@@ -46,4 +46,4 @@ var (
 				Input: &EvaluationTaskInput{
 					Objective:  Objective("objective"),
 					Task:       Task{Name: "task"},
-					TaskResult: TaskRe
+					TaskResult: TaskResult{ResultText: "good result which achieves the objective comp
