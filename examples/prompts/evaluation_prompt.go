@@ -43,4 +43,5 @@ var (
 				},
 			},
 			{
-				Input: 
+				Input: &EvaluationTaskInput{
+					Objective:  Objective("objectiv
