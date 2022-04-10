@@ -35,4 +35,4 @@ var (
 				Input: &EvaluationTaskInput{
 					Objective:  Objective("objective"),
 					Task:       Task{Name: "task-1"},
-					TaskResult: Task
+					TaskResult: TaskResult{ResultText: "bad result which does not achieve the object
