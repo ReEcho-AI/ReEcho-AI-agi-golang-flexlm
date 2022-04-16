@@ -50,4 +50,9 @@ var (
 				},
 				Output: &EvaluationTaskOutput{
 					Score:  100,
-					Reason: "This is a good result beca
+					Reason: "This is a good result because...",
+				},
+			},
+		},
+	}
+)
