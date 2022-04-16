@@ -49,4 +49,5 @@ var (
 					TaskResult: TaskResult{ResultText: "good result which achieves the objective completely"},
 				},
 				Output: &EvaluationTaskOutput{
-					Sc
+					Score:  100,
+					Reason: "This is a good result beca
