@@ -4,4 +4,8 @@ import (
 	"github.com/zawakin/lightweight-agi/prompt"
 )
 
-type MilestoneCreation
+type MilestoneCreationInput struct {
+	Objective Objective `json:"objective"`
+}
+
+type Miles
