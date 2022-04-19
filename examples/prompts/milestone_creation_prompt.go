@@ -1,4 +1,7 @@
 package prompts
 
 import (
-	"github.com/zawak
+	"github.com/zawakin/lightweight-agi/prompt"
+)
+
+type MilestoneCreation
