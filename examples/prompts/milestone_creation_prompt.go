@@ -8,4 +8,5 @@ type MilestoneCreationInput struct {
 	Objective Objective `json:"objective"`
 }
 
-type Miles
+type MilestoneCreationOutput struct {
+	Milestones Milestones `jso
