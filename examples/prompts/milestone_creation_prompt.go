@@ -14,4 +14,5 @@ type MilestoneCreationOutput struct {
 
 var (
 	MilestoneCreationPrompt = &prompt.Prompt{
-		N
+		Name: "milestone creation",
+		Description: `You are an AI tasked
