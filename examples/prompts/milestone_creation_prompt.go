@@ -9,4 +9,9 @@ type MilestoneCreationInput struct {
 }
 
 type MilestoneCreationOutput struct {
-	Milestones Milestones `jso
+	Milestones Milestones `json:"milestones"`
+}
+
+var (
+	MilestoneCreationPrompt = &prompt.Prompt{
+		N
