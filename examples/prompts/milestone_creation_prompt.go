@@ -21,4 +21,6 @@ Please provide a milestone that can be used to achieve the objective.`,
 		Template: &prompt.Example{
 			Input: &MilestoneCreationInput{
 				Objective: Objective("original objective"),
-	
+			},
+			Output: &MilestoneCreationOutput{
+				Milestones:
