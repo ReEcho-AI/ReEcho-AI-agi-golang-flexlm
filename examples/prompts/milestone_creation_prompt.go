@@ -24,4 +24,5 @@ Please provide a milestone that can be used to achieve the objective.`,
 			},
 			Output: &MilestoneCreationOutput{
 				Milestones: Milestones{
-					{Objective: Objective("milestone1
+					{Objective: Objective("milestone1"), Name: "milestone1"},
+					{Objective: Objective("milestone2"), 
