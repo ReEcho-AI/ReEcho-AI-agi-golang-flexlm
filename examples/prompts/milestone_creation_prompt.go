@@ -34,4 +34,5 @@ Please provide a milestone that can be used to achieve the objective.`,
 )
 
 type TaskCreationInput struct {
-	Objecti
+	Objective      Objective   `json:"objective"`
+	QueuedTasks    Task
