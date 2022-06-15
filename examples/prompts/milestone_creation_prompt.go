@@ -35,4 +35,5 @@ Please provide a milestone that can be used to achieve the objective.`,
 
 type TaskCreationInput struct {
 	Objective      Objective   `json:"objective"`
-	QueuedTasks    Task
+	QueuedTasks    Tasks       `json:"queued_tasks"`
+	LastTaskResult *TaskResult `json:"last_t
