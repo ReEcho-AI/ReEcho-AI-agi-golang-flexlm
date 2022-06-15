@@ -26,4 +26,12 @@ Please provide a milestone that can be used to achieve the objective.`,
 				Milestones: Milestones{
 					{Objective: Objective("milestone1"), Name: "milestone1"},
 					{Objective: Objective("milestone2"), Name: "milestone2"},
-					{Objective: Objective("milestone3"), Name: "milesto
+					{Objective: Objective("milestone3"), Name: "milestone3"},
+				},
+			},
+		},
+	}
+)
+
+type TaskCreationInput struct {
+	Objecti
