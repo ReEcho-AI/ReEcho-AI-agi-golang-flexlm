@@ -40,4 +40,9 @@ type TaskCreationInput struct {
 }
 
 type TaskCreationOutput struct {
-	Tasks Tasks `json:"t
+	Tasks Tasks `json:"tasks"`
+}
+
+var (
+	TaskCreationPrompt = &prompt.Prompt{
+		Name:        
