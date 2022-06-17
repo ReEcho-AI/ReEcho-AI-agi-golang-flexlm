@@ -46,4 +46,5 @@ type TaskCreationOutput struct {
 var (
 	TaskCreationPrompt = &prompt.Prompt{
 		Name:        "task creation",
-		Description: `Create new tasks to b
+		Description: `Create new tasks to be completed in order to achieve the objective if necessary.`,
+		Template: &pro
