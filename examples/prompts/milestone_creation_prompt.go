@@ -52,3 +52,8 @@ var (
 				Objective: Objective("original objective"),
 				QueuedTasks: Tasks{
 					Task{
+						Name: "task-10",
+					},
+					Task{
+						Name: "task-11",
+					
