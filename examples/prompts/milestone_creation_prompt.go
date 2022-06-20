@@ -49,4 +49,6 @@ var (
 		Description: `Create new tasks to be completed in order to achieve the objective if necessary.`,
 		Template: &prompt.Example{
 			Input: &TaskCreationInput{
-				Objective: Objec
+				Objective: Objective("original objective"),
+				QueuedTasks: Tasks{
+					Task{
