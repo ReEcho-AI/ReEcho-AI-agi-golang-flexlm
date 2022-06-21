@@ -60,4 +60,6 @@ var (
 				},
 				LastTaskResult: &TaskResult{
 					Task: Task{
-			
+						Name: "task-9",
+					},
+					ResultText: "task-9 result",
