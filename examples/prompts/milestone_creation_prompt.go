@@ -56,4 +56,8 @@ var (
 					},
 					Task{
 						Name: "task-11",
-					
+					},
+				},
+				LastTaskResult: &TaskResult{
+					Task: Task{
+			
