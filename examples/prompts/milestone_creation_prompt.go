@@ -66,4 +66,8 @@ var (
 				},
 			},
 			Output: &TaskCreationOutput{
-				Tasks: Tas
+				Tasks: Tasks{
+					Task{
+						Name: "task-10",
+					},
+					Task{
