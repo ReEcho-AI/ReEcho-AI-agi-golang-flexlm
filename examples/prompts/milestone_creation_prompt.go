@@ -63,3 +63,7 @@ var (
 						Name: "task-9",
 					},
 					ResultText: "task-9 result",
+				},
+			},
+			Output: &TaskCreationOutput{
+				Tasks: Tas
