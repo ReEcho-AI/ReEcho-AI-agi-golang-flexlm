@@ -6,4 +6,5 @@ import (
 )
 
 // Objective is the objective of the task.
-// It is use
+// It is used to determine the type of task to create.
+type O
