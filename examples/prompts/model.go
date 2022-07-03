@@ -10,4 +10,8 @@ import (
 type Objective string
 
 func (o Objective) String() string {
-	return s
+	return string(o)
+}
+
+type Milestone struct {
+	Objective Objective `json:"ob
