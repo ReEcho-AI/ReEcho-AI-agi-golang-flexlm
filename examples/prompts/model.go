@@ -21,4 +21,6 @@ type Milestone struct {
 type Milestones []Milestone
 
 func (ms Milestones) String() string {
-	var sb strings.Bui
+	var sb strings.Builder
+	for i, m := range ms {
+		sb.WriteString(fmt.Sprintf("%d. %s\n
