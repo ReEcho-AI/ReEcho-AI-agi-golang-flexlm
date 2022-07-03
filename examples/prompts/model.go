@@ -14,4 +14,8 @@ func (o Objective) String() string {
 }
 
 type Milestone struct {
-	Objective Objective `json:"ob
+	Objective Objective `json:"objective"`
+	Name      string    `json:"name"`
+}
+
+type Milestones []Milestone
