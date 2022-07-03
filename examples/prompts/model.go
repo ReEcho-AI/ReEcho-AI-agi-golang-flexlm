@@ -23,4 +23,10 @@ type Milestones []Milestone
 func (ms Milestones) String() string {
 	var sb strings.Builder
 	for i, m := range ms {
-		sb.WriteString(fmt.Sprintf("%d. %s\n
+		sb.WriteString(fmt.Sprintf("%d. %s\n", i+1, m.Name))
+	}
+	return sb.String()
+}
+
+var (
+	// 
