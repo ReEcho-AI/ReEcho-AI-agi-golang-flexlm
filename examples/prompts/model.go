@@ -44,4 +44,7 @@ func (t Task) String() string {
 	return fmt.Sprintf(`"%s"`, t.Name)
 }
 
-typ
+type Tasks []Task
+
+func (ts *Tasks) Add(task Task) {
+	*ts = appen
