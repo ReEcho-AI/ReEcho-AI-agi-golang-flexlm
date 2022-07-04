@@ -29,4 +29,9 @@ func (ms Milestones) String() string {
 }
 
 var (
-	// MaxContextLength is the maximum length of the context that 
+	// MaxContextLength is the maximum length of the context that can be
+	// returned by the model.
+	MaxContextLength = 2000
+)
+
+// 
