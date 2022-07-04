@@ -40,4 +40,8 @@ type Task struct {
 	Name string `json:"name"`
 }
 
-func (t Task
+func (t Task) String() string {
+	return fmt.Sprintf(`"%s"`, t.Name)
+}
+
+typ
