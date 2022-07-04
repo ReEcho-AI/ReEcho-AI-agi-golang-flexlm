@@ -47,4 +47,8 @@ func (t Task) String() string {
 type Tasks []Task
 
 func (ts *Tasks) Add(task Task) {
-	*ts = appen
+	*ts = append(*ts, task)
+}
+
+func (ts Tasks) PopLeft() (Task, Tasks) {
+	retu
