@@ -34,4 +34,5 @@ var (
 	MaxContextLength = 2000
 )
 
-// Task is a struct that contains the base task informati
+// Task is a struct that contains the base task information.
+// It is used to identify the task and to provide a name for th
