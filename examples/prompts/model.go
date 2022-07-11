@@ -51,4 +51,8 @@ func (ts *Tasks) Add(task Task) {
 }
 
 func (ts Tasks) PopLeft() (Task, Tasks) {
-	retu
+	return ts[0], ts[1:]
+}
+
+func (ts Tasks) String() string {
+	var ss []s
