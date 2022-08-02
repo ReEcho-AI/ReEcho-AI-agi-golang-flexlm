@@ -55,4 +55,6 @@ func (ts Tasks) PopLeft() (Task, Tasks) {
 }
 
 func (ts Tasks) String() string {
-	var ss []s
+	var ss []string
+	for _, t := range ts {
+		ss = append(ss, t.String())
