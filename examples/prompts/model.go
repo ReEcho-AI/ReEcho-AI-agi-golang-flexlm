@@ -58,3 +58,8 @@ func (ts Tasks) String() string {
 	var ss []string
 	for _, t := range ts {
 		ss = append(ss, t.String())
+	}
+	return fmt.Sprintf(`[%s]`, strings.Join(ss, ","))
+}
+
+// S
