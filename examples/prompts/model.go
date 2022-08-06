@@ -62,4 +62,5 @@ func (ts Tasks) String() string {
 	return fmt.Sprintf(`[%s]`, strings.Join(ss, ","))
 }
 
-// S
+// SubTask represents a smaller unit of work within a Task.
+type SubTas
