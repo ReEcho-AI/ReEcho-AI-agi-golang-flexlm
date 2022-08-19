@@ -68,4 +68,8 @@ type SubTask struct {
 }
 
 type TaskResult struct {
-	Task       Task
+	Task       Task   `json:"task"`
+	ResultText string `json:"result_text"`
+}
+
+t
