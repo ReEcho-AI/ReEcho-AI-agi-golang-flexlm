@@ -63,4 +63,9 @@ func (ts Tasks) String() string {
 }
 
 // SubTask represents a smaller unit of work within a Task.
-type SubTas
+type SubTask struct {
+	Name string
+}
+
+type TaskResult struct {
+	Task       Task
