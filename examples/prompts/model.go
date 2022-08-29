@@ -72,4 +72,5 @@ type TaskResult struct {
 	ResultText string `json:"result_text"`
 }
 
-t
+type TaskEvaluation struct {
+	// Score has the range of 0 to 1
