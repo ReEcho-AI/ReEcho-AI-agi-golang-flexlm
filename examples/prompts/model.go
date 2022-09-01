@@ -73,4 +73,6 @@ type TaskResult struct {
 }
 
 type TaskEvaluation struct {
-	// Score has the range of 0 to 1
+	// Score has the range of 0 to 100.
+	Score  int    `json:"score"`
+	Reason stri
