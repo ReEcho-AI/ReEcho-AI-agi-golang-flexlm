@@ -78,4 +78,8 @@ type TaskEvaluation struct {
 	Reason string `json:"reason"`
 }
 
-func (t TaskEvaluation) String() str
+func (t TaskEvaluation) String() string {
+	return fmt.Sprintf(`%d%%: %s`, t.Score, t.Reason)
+}
+
+//
