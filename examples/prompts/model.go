@@ -85,4 +85,5 @@ func (t TaskEvaluation) String() string {
 // TaskContext is a struct that contains the base task and the context
 // for that task.
 type TaskContext struct {
-	Text stri
+	Text string `json:"text"`
+}
