@@ -82,4 +82,7 @@ func (t TaskEvaluation) String() string {
 	return fmt.Sprintf(`%d%%: %s`, t.Score, t.Reason)
 }
 
-// TaskContext is a struct that contains the base task and the 
+// TaskContext is a struct that contains the base task and the context
+// for that task.
+type TaskContext struct {
+	Text stri
