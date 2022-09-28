@@ -1,4 +1,8 @@
 package prompts
 
 import (
-	"github.com/zawakin/lig
+	"github.com/zawakin/lightweight-agi/prompt"
+)
+
+type ObjectiveRefinementInput struct {
+	O
