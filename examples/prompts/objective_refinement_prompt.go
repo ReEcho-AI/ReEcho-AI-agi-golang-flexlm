@@ -8,4 +8,5 @@ type ObjectiveRefinementInput struct {
 	Objective Objective `json:"objective"`
 }
 
-type ObjectiveR
+type ObjectiveRefinementOutput struct {
+	RefinedObjective Objective `json:"
