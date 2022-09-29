@@ -5,4 +5,7 @@ import (
 )
 
 type ObjectiveRefinementInput struct {
-	O
+	Objective Objective `json:"objective"`
+}
+
+type ObjectiveR
