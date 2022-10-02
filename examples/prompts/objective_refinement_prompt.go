@@ -9,4 +9,9 @@ type ObjectiveRefinementInput struct {
 }
 
 type ObjectiveRefinementOutput struct {
-	RefinedObjective Objective `json:"
+	RefinedObjective Objective `json:"refined_objective"`
+}
+
+var (
+	ObjectRefinementPrompt = &prompt.Prompt{
+	
