@@ -14,4 +14,5 @@ type ObjectiveRefinementOutput struct {
 
 var (
 	ObjectRefinementPrompt = &prompt.Prompt{
-	
+		Name:        "refinement of objective",
+		Description: `
