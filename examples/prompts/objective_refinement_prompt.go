@@ -15,4 +15,6 @@ type ObjectiveRefinementOutput struct {
 var (
 	ObjectRefinementPrompt = &prompt.Prompt{
 		Name:        "refinement of objective",
-		Description: `Refine the objective to a more specific objective that c
+		Description: `Refine the objective to a more specific objective that can be used.`,
+		Template: &prompt.Example{
+			Input:
