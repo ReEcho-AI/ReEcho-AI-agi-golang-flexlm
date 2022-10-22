@@ -17,4 +17,5 @@ var (
 		Name:        "refinement of objective",
 		Description: `Refine the objective to a more specific objective that can be used.`,
 		Template: &prompt.Example{
-			Input:
+			Input: &ObjectiveRefinementInput{
+				Objective: Objective("or
