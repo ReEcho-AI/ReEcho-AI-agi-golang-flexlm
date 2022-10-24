@@ -20,4 +20,5 @@ var (
 			Input: &ObjectiveRefinementInput{
 				Objective: Objective("original objective"),
 			},
-			Output: &ObjectiveRefineme
+			Output: &ObjectiveRefinementOutput{
+				RefinedObjective: Objective("refined objective"),
