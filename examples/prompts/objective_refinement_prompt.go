@@ -22,3 +22,7 @@ var (
 			},
 			Output: &ObjectiveRefinementOutput{
 				RefinedObjective: Objective("refined objective"),
+			},
+		},
+	}
+)
