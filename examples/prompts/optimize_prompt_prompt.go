@@ -7,4 +7,9 @@ type OptimizePromptInput struct {
 }
 
 type OptimizePromptOutput struct {
-	OptimizedPrompt *prompt.Prompt `json:"optimized_pro
+	OptimizedPrompt *prompt.Prompt `json:"optimized_prompt"`
+}
+
+var (
+	OptimizePromptPrompt = &prompt.Prompt{
+		Name:   
