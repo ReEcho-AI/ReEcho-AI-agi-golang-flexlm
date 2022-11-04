@@ -12,4 +12,5 @@ type OptimizePromptOutput struct {
 
 var (
 	OptimizePromptPrompt = &prompt.Prompt{
-		Name:   
+		Name:         "AI-Powered Prompt Optimizer",
+		Description:  `You are 
