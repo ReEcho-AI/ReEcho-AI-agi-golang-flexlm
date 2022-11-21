@@ -19,4 +19,6 @@ var (
 		Template: &prompt.Example{
 			Input: &OptimizePromptInput{
 				Original: &prompt.Prompt{
-					Name:      
+					Name:         "prompt name",
+					Description:  "prompt description",
+		
