@@ -17,4 +17,6 @@ var (
 		InputFormat:  "JSON object representing the original prompt details, including the name, description, input and output template, and examples.",
 		OutputFormat: "JSON object representing the optimized prompt details, including the revised name, description, input and output template, and examples.",
 		Template: &prompt.Example{
-			Input: &Op
+			Input: &OptimizePromptInput{
+				Original: &prompt.Prompt{
+					Name:      
