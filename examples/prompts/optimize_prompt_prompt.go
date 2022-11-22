@@ -21,4 +21,5 @@ var (
 				Original: &prompt.Prompt{
 					Name:         "prompt name",
 					Description:  "prompt description",
-		
+					InputFormat:  "prompt input format",
+					OutputFormat: "prompt
