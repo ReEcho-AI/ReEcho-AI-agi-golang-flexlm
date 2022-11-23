@@ -22,4 +22,6 @@ var (
 					Name:         "prompt name",
 					Description:  "prompt description",
 					InputFormat:  "prompt input format",
-					OutputFormat: "prompt
+					OutputFormat: "prompt output format",
+					Template: prompt.NewExample(
+						"prompt input",
