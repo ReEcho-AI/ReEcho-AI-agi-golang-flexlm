@@ -27,4 +27,6 @@ var (
 						"prompt input",
 						"prompt output",
 					),
-					Examples: prompt.Exa
+					Examples: prompt.Examples{
+						*prompt.NewExample(
+							"prompt example input 
