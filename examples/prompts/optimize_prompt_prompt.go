@@ -25,3 +25,6 @@ var (
 					OutputFormat: "prompt output format",
 					Template: prompt.NewExample(
 						"prompt input",
+						"prompt output",
+					),
+					Examples: prompt.Exa
