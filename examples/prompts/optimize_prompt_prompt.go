@@ -33,4 +33,7 @@ var (
 							"prompt example output 1",
 						),
 					},
-				
+				},
+			},
+			Output: &OptimizePromptOutput{
+				OptimizedPromp
