@@ -37,4 +37,5 @@ var (
 			},
 			Output: &OptimizePromptOutput{
 				OptimizedPrompt: &prompt.Prompt{
-					Name:         "optimized p
+					Name:         "optimized prompt name",
+					Description:  "optimized prompt d
