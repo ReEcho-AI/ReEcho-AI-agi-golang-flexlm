@@ -43,3 +43,6 @@ var (
 					OutputFormat: "optimized prompt output format",
 					Template: prompt.NewExample(
 						"optimized prompt input",
+						"optimized prompt output",
+					),
+					Examples: prompt.Exa
