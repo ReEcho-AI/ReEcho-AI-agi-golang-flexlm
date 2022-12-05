@@ -45,4 +45,6 @@ var (
 						"optimized prompt input",
 						"optimized prompt output",
 					),
-					Examples: prompt.Exa
+					Examples: prompt.Examples{
+						*prompt.NewExample(
+							"optimized prompt exam
