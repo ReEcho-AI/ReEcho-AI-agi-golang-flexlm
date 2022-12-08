@@ -48,4 +48,7 @@ var (
 					Examples: prompt.Examples{
 						*prompt.NewExample(
 							"optimized prompt example input 1",
-							"optimized prompt example 
+							"optimized prompt example output 1",
+						),
+						*prompt.NewExample(
+							"optimized prompt example
