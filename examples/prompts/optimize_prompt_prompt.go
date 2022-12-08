@@ -51,4 +51,7 @@ var (
 							"optimized prompt example output 1",
 						),
 						*prompt.NewExample(
-							"optimized prompt example
+							"optimized prompt example input 2",
+							"optimized prompt example output 2",
+						),
+		
