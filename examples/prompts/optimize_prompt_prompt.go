@@ -71,4 +71,9 @@ var (
 						Examples: prompt.Examples{
 							*prompt.NewExample(
 								"Elephant",
-								"Elephants can communicate using infrasound, w
+								"Elephants can communicate using infrasound, which is too low for humans to hear.",
+							),
+						},
+					},
+				},
+				Ou
