@@ -70,4 +70,5 @@ var (
 						),
 						Examples: prompt.Examples{
 							*prompt.NewExample(
-								"E
+								"Elephant",
+								"Elephants can communicate using infrasound, w
