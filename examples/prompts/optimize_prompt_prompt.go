@@ -59,3 +59,6 @@ var (
 			},
 		},
 		Examples: prompt.Examples{
+			prompt.Example{
+				Input: map[string]any{
+					"origina
