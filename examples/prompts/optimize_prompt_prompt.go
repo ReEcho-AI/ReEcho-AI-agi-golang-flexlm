@@ -63,4 +63,5 @@ var (
 				Input: map[string]any{
 					"original_prompt": prompt.Prompt{
 						Name:        "Animal Facts",
-					
+						Description: "Generate a fact about an animal",
+						Template: pr
