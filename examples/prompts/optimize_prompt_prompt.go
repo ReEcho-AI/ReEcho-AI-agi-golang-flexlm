@@ -64,4 +64,6 @@ var (
 					"original_prompt": prompt.Prompt{
 						Name:        "Animal Facts",
 						Description: "Generate a fact about an animal",
-						Template: pr
+						Template: prompt.NewExample(
+							"Animal name",
+							"Animal
