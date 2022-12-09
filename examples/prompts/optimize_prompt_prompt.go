@@ -61,4 +61,6 @@ var (
 		Examples: prompt.Examples{
 			prompt.Example{
 				Input: map[string]any{
-					"origina
+					"original_prompt": prompt.Prompt{
+						Name:        "Animal Facts",
+					
