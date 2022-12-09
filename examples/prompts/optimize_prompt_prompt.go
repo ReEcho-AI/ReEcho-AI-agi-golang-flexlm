@@ -76,4 +76,6 @@ var (
 						},
 					},
 				},
-				Ou
+				Output: map[string]any{
+					"optimized_prompt": prompt.Prompt{
+						Name:
