@@ -66,4 +66,8 @@ var (
 						Description: "Generate a fact about an animal",
 						Template: prompt.NewExample(
 							"Animal name",
-							"Animal
+							"Animal fact",
+						),
+						Examples: prompt.Examples{
+							*prompt.NewExample(
+								"E
