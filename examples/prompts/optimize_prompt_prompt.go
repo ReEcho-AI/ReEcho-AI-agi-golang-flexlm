@@ -54,4 +54,8 @@ var (
 							"optimized prompt example input 2",
 							"optimized prompt example output 2",
 						),
-		
+					},
+				},
+			},
+		},
+		Examples: prompt.Examples{
