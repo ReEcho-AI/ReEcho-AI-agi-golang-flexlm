@@ -79,4 +79,5 @@ var (
 				Output: map[string]any{
 					"optimized_prompt": prompt.Prompt{
 						Name:        "Intriguing Animal Facts",
-						Description: "Provid
+						Description: "Provide an intriguing fact about the specified animal",
+						Template: prompt.
