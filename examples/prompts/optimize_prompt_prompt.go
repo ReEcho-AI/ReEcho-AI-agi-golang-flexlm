@@ -78,4 +78,5 @@ var (
 				},
 				Output: map[string]any{
 					"optimized_prompt": prompt.Prompt{
-						Name:
+						Name:        "Intriguing Animal Facts",
+						Description: "Provid
