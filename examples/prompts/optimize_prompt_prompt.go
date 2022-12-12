@@ -82,4 +82,6 @@ var (
 						Description: "Provide an intriguing fact about the specified animal",
 						Template: prompt.NewExample(
 							"Name of the animal",
-							"An intri
+							"An intriguing fact about the animal",
+						),
+						Examples: prompt.E
