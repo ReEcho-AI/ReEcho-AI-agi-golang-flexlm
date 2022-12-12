@@ -80,4 +80,6 @@ var (
 					"optimized_prompt": prompt.Prompt{
 						Name:        "Intriguing Animal Facts",
 						Description: "Provide an intriguing fact about the specified animal",
-						Template: prompt.
+						Template: prompt.NewExample(
+							"Name of the animal",
+							"An intri
