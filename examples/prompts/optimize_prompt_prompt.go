@@ -84,4 +84,7 @@ var (
 							"Name of the animal",
 							"An intriguing fact about the animal",
 						),
-						Examples: prompt.E
+						Examples: prompt.Examples{
+							*prompt.NewExample(
+								"Elephant",
+								"Elephants can communi
