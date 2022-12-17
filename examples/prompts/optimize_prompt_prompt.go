@@ -90,3 +90,5 @@ var (
 								"Elephants can communicate using infrasound, which is too low for humans to hear.",
 							),
 							*prompt.NewExample(
+								"Giraffe",
+								"Giraffes have a unique walking pattern, mov
