@@ -87,4 +87,4 @@ var (
 						Examples: prompt.Examples{
 							*prompt.NewExample(
 								"Elephant",
-								"Elephants can communi
+								"Elephants can communicate using infrasound, which is too low for hu
