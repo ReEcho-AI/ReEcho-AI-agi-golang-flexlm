@@ -92,4 +92,11 @@ var (
 							*prompt.NewExample(
 								"Giraffe",
 								"Giraffes have a unique walking pattern, moving both legs on one side of their body at the same time.",
-							
+							),
+						},
+					},
+				},
+			},
+		},
+	}
+)
