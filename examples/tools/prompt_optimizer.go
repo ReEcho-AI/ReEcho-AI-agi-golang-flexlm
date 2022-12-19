@@ -17,3 +17,11 @@ func OptimizePrompt(ctx context.Context, runner *prompt.PromptRunner, original *
 			Original: p,
 		}, &result)
 		if err != nil {
+			return nil, err
+		}
+
+		p = result.OptimizedPrompt
+	}
+
+	return p, nil
+}
