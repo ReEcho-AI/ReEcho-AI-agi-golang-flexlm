@@ -6,4 +6,6 @@ participant TaskCreationAgent
 participant TaskContextAgent
 participant ExecutionAgent
 participant EvaluationAgent
-participant
+participant PriorizationAgent
+
+AGIAgent -> TaskCreationAgent: C
