@@ -2,4 +2,6 @@
 @startuml
 actor AGIAgent
 participant ObjectiveRefinementAgent
-participant T
+participant TaskCreationAgent
+participant TaskContextAgent
+particip
