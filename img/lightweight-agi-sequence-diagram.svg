@@ -4,4 +4,6 @@ actor AGIAgent
 participant ObjectiveRefinementAgent
 participant TaskCreationAgent
 participant TaskContextAgent
-particip
+participant ExecutionAgent
+participant EvaluationAgent
+participant
