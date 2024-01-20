@@ -11,4 +11,5 @@ participant PriorizationAgent
 AGIAgent -> TaskCreationAgent: CreateTasks()
 TaskCreationAgent - -> AGIAgent: tasks
 
-loop for e
+loop for each task
+  AGIAgent -> TaskContextAgent: FindRelevantContext(task)
