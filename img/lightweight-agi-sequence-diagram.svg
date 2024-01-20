@@ -8,4 +8,7 @@ participant ExecutionAgent
 participant EvaluationAgent
 participant PriorizationAgent
 
-AGIAgent -> TaskCreationAgent: C
+AGIAgent -> TaskCreationAgent: CreateTasks()
+TaskCreationAgent - -> AGIAgent: tasks
+
+loop for e
