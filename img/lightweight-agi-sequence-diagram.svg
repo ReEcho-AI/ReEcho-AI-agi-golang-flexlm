@@ -13,3 +13,6 @@ TaskCreationAgent - -> AGIAgent: tasks
 
 loop for each task
   AGIAgent -> TaskContextAgent: FindRelevantContext(task)
+  TaskContextAgent - -> AGIAgent: relevantContext
+  
+  AGIAgent -> Exec
