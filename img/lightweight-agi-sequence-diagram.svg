@@ -15,4 +15,5 @@ loop for each task
   AGIAgent -> TaskContextAgent: FindRelevantContext(task)
   TaskContextAgent - -> AGIAgent: relevantContext
   
-  AGIAgent -> Exec
+  AGIAgent -> ExecutionAgent: ExecuteTask(task, relevantContext)
+  ExecutionAgent - -
