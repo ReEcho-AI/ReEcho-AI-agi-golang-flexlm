@@ -19,4 +19,6 @@ loop for each task
   ExecutionAgent - -> AGIAgent: result
   
   AGIAgent -> EvaluationAgent: EvaluateTask(task, result)
-  EvaluationAgent - -> AGIAgent: ev
+  EvaluationAgent - -> AGIAgent: evaluation
+  
+  AGIAgent -> TaskContextAgent: StoreContext(t
