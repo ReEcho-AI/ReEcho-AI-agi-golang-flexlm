@@ -21,4 +21,6 @@ loop for each task
   AGIAgent -> EvaluationAgent: EvaluateTask(task, result)
   EvaluationAgent - -> AGIAgent: evaluation
   
-  AGIAgent -> TaskContextAgent: StoreContext(t
+  AGIAgent -> TaskContextAgent: StoreContext(task, result)
+  
+  AGIAgent -> PriorizationAgent: PrioritizeTasks(
