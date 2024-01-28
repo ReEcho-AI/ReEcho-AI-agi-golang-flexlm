@@ -23,4 +23,5 @@ loop for each task
   
   AGIAgent -> TaskContextAgent: StoreContext(task, result)
   
-  AGIAgent -> PriorizationAgent: PrioritizeTasks(
+  AGIAgent -> PriorizationAgent: PrioritizeTasks(tasks)
+  PriorizationAgent - -> AGIAgent: prioritizedTasks
