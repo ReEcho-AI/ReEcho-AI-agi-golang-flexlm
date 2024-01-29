@@ -25,3 +25,6 @@ loop for each task
   
   AGIAgent -> PriorizationAgent: PrioritizeTasks(tasks)
   PriorizationAgent - -> AGIAgent: prioritizedTasks
+  AGIAgent -> AGIAgent: tasks = prioritizedTasks
+end
+@enduml
