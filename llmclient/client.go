@@ -3,4 +3,7 @@ package llmclient
 import (
 	"context"
 
-	"github.com
+	"github.com/zawakin/lightweight-agi/model"
+)
+
+type EmbeddingClient inte
