@@ -6,4 +6,5 @@ import (
 	"github.com/zawakin/lightweight-agi/model"
 )
 
-type EmbeddingClient inte
+type EmbeddingClient interface {
+	EmbedText(ctx context.Context, text string) (*model.Em
