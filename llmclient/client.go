@@ -7,4 +7,5 @@ import (
 )
 
 type EmbeddingClient interface {
-	EmbedText(ctx context.Context, text string) (*model.Em
+	EmbedText(ctx context.Context, text string) (*model.Embedding, error)
+	EmbedTexts(ctx context.Context, text []string) (
