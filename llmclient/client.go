@@ -12,4 +12,5 @@ type EmbeddingClient interface {
 }
 
 // CompletionClient is an interface that provides a method to complete text.
-type CompletionClient interface
+type CompletionClient interface {
+	Complete(ctx context.Context, text string, maxTokens int) (string
