@@ -11,4 +11,5 @@ type EmbeddingClient interface {
 	EmbedTexts(ctx context.Context, text []string) ([]model.Embedding, error)
 }
 
-// CompletionClient is an interface that provi
+// CompletionClient is an interface that provides a method to complete text.
+type CompletionClient interface
