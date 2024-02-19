@@ -17,4 +17,4 @@ type CompletionClient interface {
 }
 
 type ChatCompletionClient interface {
-	Complete(ctx context.Co
+	Complete(ctx context.Context, messages ChatMessages, opt CompletionOption) (string
