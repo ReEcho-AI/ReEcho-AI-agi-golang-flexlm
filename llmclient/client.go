@@ -17,4 +17,11 @@ type CompletionClient interface {
 }
 
 type ChatCompletionClient interface {
-	Complete(ctx context.Context, messages ChatMessages, opt CompletionOption) (string
+	Complete(ctx context.Context, messages ChatMessages, opt CompletionOption) (string, error)
+}
+
+type Role string
+
+const (
+	RoleUser      Role = "user"
+	RoleAssi
