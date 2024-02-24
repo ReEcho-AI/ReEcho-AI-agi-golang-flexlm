@@ -32,4 +32,9 @@ func (r Role) String() string {
 	return string(r)
 }
 
-typ
+type ChatMessage struct {
+	Role    Role
+	Content string
+}
+
+type ChatMes
