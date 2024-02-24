@@ -24,4 +24,5 @@ type Role string
 
 const (
 	RoleUser      Role = "user"
-	RoleAssi
+	RoleAssistant Role = "assistant"
+	RoleSystem    Role = "syste
