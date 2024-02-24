@@ -37,4 +37,8 @@ type ChatMessage struct {
 	Content string
 }
 
-type ChatMes
+type ChatMessages []ChatMessage
+
+type CompletionOption struct {
+	MaxTokens int
+}
