@@ -25,4 +25,11 @@ type Role string
 const (
 	RoleUser      Role = "user"
 	RoleAssistant Role = "assistant"
-	RoleSystem    Role = "syste
+	RoleSystem    Role = "system"
+)
+
+func (r Role) String() string {
+	return string(r)
+}
+
+typ
