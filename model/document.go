@@ -1,4 +1,9 @@
 package model
 
 import (
-	"github.com
+	"github.com/google/uuid"
+)
+
+type DocumentID uuid.UUID
+
+func NewDocumentID() 
