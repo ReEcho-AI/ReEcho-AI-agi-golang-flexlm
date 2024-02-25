@@ -79,3 +79,31 @@ func (c *OpenAICompletionClient) Complete(ctx context.Context, text string, maxT
 		time.Sleep(1 * time.Second)
 
 		result, err = c.complete(ctx, text, maxTokens)
+		if err != nil {
+			return "", err
+		}
+	}
+	return result, nil
+}
+
+func (c *OpenAICompletionClient) complete(ctx context.Context, text string, maxTokens int) (string, error) {
+	resp, err := c.openAIClient.CreateChatCompletion(ctx, openai.ChatCompletionRequest{
+		Model: c.model,
+		Messages: []openai.ChatCompletionMessage{
+			{
+				Role:    "user",
+				Content: text,
+			},
+		},
+		MaxTokens:   maxTokens,
+		Temperature: 0.7,
+	})
+	if err != nil {
+		return "", err
+	}
+	if len(resp.Choices) == 0 {
+		return "", errors.New("no choices returned")
+	}
+	result := resp.Choices[0].Message.Content
+	return result, nil
+}
