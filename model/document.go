@@ -6,4 +6,8 @@ import (
 
 type DocumentID uuid.UUID
 
-func NewDocumentID() 
+func NewDocumentID() DocumentID {
+	return DocumentID(uuid.New())
+}
+
+type 
