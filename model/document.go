@@ -13,4 +13,9 @@ func NewDocumentID() DocumentID {
 type Document struct {
 	ID       DocumentID
 	Text     string
-	Metadata *Docu
+	Metadata *DocumentMetadata
+}
+
+type Source string
+
+type DocumentMetadata st
