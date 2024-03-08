@@ -10,4 +10,7 @@ func NewDocumentID() DocumentID {
 	return DocumentID(uuid.New())
 }
 
-type 
+type Document struct {
+	ID       DocumentID
+	Text     string
+	Metadata *Docu
