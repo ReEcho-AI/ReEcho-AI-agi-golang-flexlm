@@ -23,3 +23,9 @@ type DocumentMetadata struct {
 
 type DocumentChunkMetadata struct {
 	*DocumentMetadata
+	DocumentID DocumentID
+}
+
+type DocumentChunkID uuid.UUID
+
+func NewDocumentChu
