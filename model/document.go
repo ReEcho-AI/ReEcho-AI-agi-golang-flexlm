@@ -32,4 +32,6 @@ func NewDocumentChunkID() DocumentChunkID {
 	return DocumentChunkID(uuid.New())
 }
 
-type 
+type DocumentChunk struct {
+	ID         DocumentChunkID
+	Do
