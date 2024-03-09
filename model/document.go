@@ -28,4 +28,8 @@ type DocumentChunkMetadata struct {
 
 type DocumentChunkID uuid.UUID
 
-func NewDocumentChu
+func NewDocumentChunkID() DocumentChunkID {
+	return DocumentChunkID(uuid.New())
+}
+
+type 
