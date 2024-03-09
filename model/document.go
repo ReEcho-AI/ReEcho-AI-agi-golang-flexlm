@@ -18,4 +18,8 @@ type Document struct {
 
 type Source string
 
-type DocumentMetadata st
+type DocumentMetadata struct {
+}
+
+type DocumentChunkMetadata struct {
+	*DocumentMetadata
