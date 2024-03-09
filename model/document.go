@@ -34,4 +34,6 @@ func NewDocumentChunkID() DocumentChunkID {
 
 type DocumentChunk struct {
 	ID         DocumentChunkID
-	Do
+	DocumentID DocumentID
+	Text       string
+	Metadata   DocumentChu
