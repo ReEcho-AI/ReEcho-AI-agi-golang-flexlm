@@ -45,4 +45,9 @@ type DocumentChunkWithScore struct {
 	Score float32
 }
 
-type DocumentWithChunks
+type DocumentWithChunks struct {
+	Document
+	Chunks []DocumentChunk
+}
+
+type DocumentMetada
