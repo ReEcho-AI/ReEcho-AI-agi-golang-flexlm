@@ -36,4 +36,8 @@ type DocumentChunk struct {
 	ID         DocumentChunkID
 	DocumentID DocumentID
 	Text       string
-	Metadata   DocumentChu
+	Metadata   DocumentChunkMetadata
+	Embedding  []float32
+}
+
+type DocumentChunkWithScore struc
