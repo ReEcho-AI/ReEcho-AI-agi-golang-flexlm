@@ -40,4 +40,9 @@ type DocumentChunk struct {
 	Embedding  []float32
 }
 
-type DocumentChunkWithScore struc
+type DocumentChunkWithScore struct {
+	DocumentChunk
+	Score float32
+}
+
+type DocumentWithChunks
