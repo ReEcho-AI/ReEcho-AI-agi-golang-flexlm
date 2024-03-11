@@ -50,4 +50,7 @@ type DocumentWithChunks struct {
 	Chunks []DocumentChunk
 }
 
-type DocumentMetada
+type DocumentMetadataFilter struct {
+	DocumentID *DocumentID
+	Source     *Source
+	SourceID  
