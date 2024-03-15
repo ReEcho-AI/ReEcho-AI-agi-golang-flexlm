@@ -57,4 +57,6 @@ type DocumentMetadataFilter struct {
 	// Author     *string
 }
 
-type Qu
+type Query struct {
+	Query  string
+	Filter *DocumentMetadataFil
