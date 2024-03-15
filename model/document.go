@@ -53,4 +53,8 @@ type DocumentWithChunks struct {
 type DocumentMetadataFilter struct {
 	DocumentID *DocumentID
 	Source     *Source
-	SourceID  
+	SourceID   *string
+	// Author     *string
+}
+
+type Qu
