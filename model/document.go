@@ -59,4 +59,10 @@ type DocumentMetadataFilter struct {
 
 type Query struct {
 	Query  string
-	Filter *DocumentMetadataFil
+	Filter *DocumentMetadataFilter
+	TopK   int
+}
+
+type QueryWithEmbedding struct {
+	Query
+	Emb
