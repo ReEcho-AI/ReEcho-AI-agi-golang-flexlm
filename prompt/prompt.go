@@ -90,3 +90,35 @@ func (p *Example) Format() (string, error) {
 	output, err := toJson(p.Output)
 	if err != nil {
 		return "", err
+	}
+
+	return fmt.Sprintf("Input: %s\nOutput: %s", input, output), nil
+}
+
+type Examples []Example
+
+func (p Examples) Format() (string, error) {
+	if len(p) == 0 {
+		return "", nil
+	}
+
+	s := ""
+	for _, e := range p {
+		s += "Example:\n"
+		ds, err := e.Format()
+		if err != nil {
+			return "", err
+		}
+
+		s += ds + "\n"
+	}
+	return s, nil
+}
+
+func toJson(v any) (string, error) {
+	s, err := json.Marshal(v)
+	if err != nil {
+		return "", err
+	}
+	return string(s), nil
+}
