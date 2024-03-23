@@ -65,4 +65,8 @@ type Query struct {
 
 type QueryWithEmbedding struct {
 	Query
-	Emb
+	Embedding Embedding
+}
+
+type QueryResult struct {
+	Query   string
