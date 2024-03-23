@@ -70,3 +70,5 @@ type QueryWithEmbedding struct {
 
 type QueryResult struct {
 	Query   string
+	Results []DocumentChunkWithScore
+}
