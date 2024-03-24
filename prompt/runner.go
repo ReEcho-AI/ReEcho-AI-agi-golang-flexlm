@@ -5,4 +5,7 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/zawakin/lightweight-agi/ll
+	"github.com/zawakin/lightweight-agi/llmclient"
+)
+
+// PromptRunner is a struct that runs a promp
