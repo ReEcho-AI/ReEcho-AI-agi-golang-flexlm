@@ -8,4 +8,6 @@ import (
 	"github.com/zawakin/lightweight-agi/llmclient"
 )
 
-// PromptRunner is a struct that runs a promp
+// PromptRunner is a struct that runs a prompt.
+type PromptRunner struct {
+	llmClient llmclient.Completi
