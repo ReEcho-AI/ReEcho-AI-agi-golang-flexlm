@@ -16,4 +16,10 @@ type PromptRunner struct {
 }
 
 func NewPromptRunner(llmClient llmclient.CompletionClient, verbose bool) *PromptRunner {
-	return &PromptRu
+	return &PromptRunner{
+		llmClient: llmClient,
+		verbose:   verbose,
+	}
+}
+
+// Run runs a promp
