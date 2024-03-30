@@ -22,4 +22,5 @@ func NewPromptRunner(llmClient llmclient.CompletionClient, verbose bool) *Prompt
 	}
 }
 
-// Run runs a promp
+// Run runs a prompt.
+// It formats the input, sends it to the completion client, and unm
