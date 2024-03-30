@@ -15,4 +15,5 @@ type PromptRunner struct {
 	verbose bool
 }
 
-func NewPromptRunner(llmClient llmclient.CompletionClien
+func NewPromptRunner(llmClient llmclient.CompletionClient, verbose bool) *PromptRunner {
+	return &PromptRu
