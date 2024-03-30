@@ -10,4 +10,9 @@ import (
 
 // PromptRunner is a struct that runs a prompt.
 type PromptRunner struct {
-	llmClient llmclient.Completi
+	llmClient llmclient.CompletionClient
+
+	verbose bool
+}
+
+func NewPromptRunner(llmClient llmclient.CompletionClien
