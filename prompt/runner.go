@@ -24,4 +24,4 @@ func NewPromptRunner(llmClient llmclient.CompletionClient, verbose bool) *Prompt
 
 // Run runs a prompt.
 // It formats the input, sends it to the completion client, and unmarshals the output.
-func (a *PromptRunner) Run(ctx conte
+func (a *PromptRunner) Run(ctx context.Context, prompter Prompter, input Input, out Output) error {
