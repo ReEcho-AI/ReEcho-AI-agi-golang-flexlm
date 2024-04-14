@@ -31,4 +31,5 @@ func (a *PromptRunner) Run(ctx context.Context, prompter Prompter, input Input, 
 	}
 
 	if a.verbose {
-		log.Println("----
+		log.Println("--------------------------------")
+		log.Printf("\033[33mPrompt:\
