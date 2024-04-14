@@ -32,4 +32,7 @@ func (a *PromptRunner) Run(ctx context.Context, prompter Prompter, input Input, 
 
 	if a.verbose {
 		log.Println("--------------------------------")
-		log.Printf("\033[33mPrompt:\
+		log.Printf("\033[33mPrompt:\n%s\033[0m\n", prompt)
+	}
+
+	result, err := a.llmClient.
