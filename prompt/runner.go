@@ -37,4 +37,8 @@ func (a *PromptRunner) Run(ctx context.Context, prompter Prompter, input Input, 
 
 	result, err := a.llmClient.Complete(ctx, prompt, 1000)
 	if err != nil {
-		retur
+		return err
+	}
+
+	if a.verbose {
+		log.Printf("\033[32mResult:\
