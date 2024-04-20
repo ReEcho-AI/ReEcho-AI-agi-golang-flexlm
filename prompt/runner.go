@@ -35,4 +35,6 @@ func (a *PromptRunner) Run(ctx context.Context, prompter Prompter, input Input, 
 		log.Printf("\033[33mPrompt:\n%s\033[0m\n", prompt)
 	}
 
-	result, err := a.llmClient.
+	result, err := a.llmClient.Complete(ctx, prompt, 1000)
+	if err != nil {
+		retur
