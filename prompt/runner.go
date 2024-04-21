@@ -45,4 +45,10 @@ func (a *PromptRunner) Run(ctx context.Context, prompter Prompter, input Input, 
 		log.Println("--------------------------------")
 	}
 
-	err = json.Unmarshal([]byte(result)
+	err = json.Unmarshal([]byte(result), out)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
