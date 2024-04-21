@@ -42,4 +42,7 @@ func (a *PromptRunner) Run(ctx context.Context, prompter Prompter, input Input, 
 
 	if a.verbose {
 		log.Printf("\033[32mResult:\n%s\033[0m\n", result)
-		log.Println("------------------
+		log.Println("--------------------------------")
+	}
+
+	err = json.Unmarshal([]byte(result)
