@@ -8,4 +8,6 @@ import (
 )
 
 func GetTextChunks(text string, chunkTokenSize int) []string {
-	var
+	var chunks []string
+	for i := 0; i < len(text); i += chunkTokenSize {
+		end :
