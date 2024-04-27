@@ -7,4 +7,5 @@ import (
 	"github.com/zawakin/lightweight-agi/model"
 )
 
-func GetTex
+func GetTextChunks(text string, chunkTokenSize int) []string {
+	var
