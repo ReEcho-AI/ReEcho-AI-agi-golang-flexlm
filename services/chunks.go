@@ -19,4 +19,4 @@ func GetTextChunks(text string, chunkTokenSize int) []string {
 	return chunks
 }
 
-fun
+func CreateDocumentChunks(ctx context.Context, embeddingClient llmclient.E
