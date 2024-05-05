@@ -24,4 +24,7 @@ func CreateDocumentChunks(ctx context.Context, embeddingClient llmclient.Embeddi
 
 	embeddings, err := embeddingClient.EmbedTexts(ctx, GetTextChunks(doc.Text, chunkTokenSize))
 	if err != nil {
-		return
+		return nil, err
+	}
+
+	for i, chunkText := range GetTextChunks(doc
