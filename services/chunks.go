@@ -28,4 +28,7 @@ func CreateDocumentChunks(ctx context.Context, embeddingClient llmclient.Embeddi
 	}
 
 	for i, chunkText := range GetTextChunks(doc.Text, chunkTokenSize) {
-		chunks = append(chunks, model.Document
+		chunks = append(chunks, model.DocumentChunk{
+			ID:         model.NewDocumentChunkID(),
+			DocumentID: doc.ID,
+	
