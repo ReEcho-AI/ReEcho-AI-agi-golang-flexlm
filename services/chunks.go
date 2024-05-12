@@ -36,4 +36,8 @@ func CreateDocumentChunks(ctx context.Context, embeddingClient llmclient.Embeddi
 				DocumentMetadata: doc.Metadata,
 				DocumentID:       doc.ID,
 			},
-			Embedd
+			Embedding: embeddings[i].Embedding,
+		})
+	}
+	return chunks, nil
+}
