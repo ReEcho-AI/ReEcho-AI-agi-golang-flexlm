@@ -31,4 +31,6 @@ func CreateDocumentChunks(ctx context.Context, embeddingClient llmclient.Embeddi
 		chunks = append(chunks, model.DocumentChunk{
 			ID:         model.NewDocumentChunkID(),
 			DocumentID: doc.ID,
-	
+			Text:       chunkText,
+			Metadata: model.DocumentChunkMetadata{
+				Doc
