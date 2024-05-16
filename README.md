@@ -16,3 +16,79 @@ MultiLM-AGI is a project that aims to create a simple but efficient Artificial G
 - **In-Memory Vector Store**: Efficient in-memory vector store to save embedding vectors for similarity queries, enabling faster access and improved performance.
 
 ## Note: Currently Supported LLM Provider
+
+Though MultiLM-AGI is structured to be versatile and work with various Large Language Models (LLMs) that gratify the LLMClient interface, as of now, only OpenAI's GPT-4 or GPT-3.5 are supported as the LLM providers. Future releases may include support for additional LLM providers. Stay connected for further developments in the MultiLM-AGI project.
+
+## Install
+1. Install Go and configure your Go workspace.
+2. Clone the repo:
+
+```bash
+git clone https://github.com/ReEcho-AI/agi-golang-flexlm.git
+```
+
+3. Navigate into the repo:
+
+```bash
+cd agi-golang-flexlm
+```
+
+4. Download the necessary Go packages:
+
+```bash
+go mod download
+```
+
+5. Create a .env file with your OpenAI API key:
+
+```makefile
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+## Usage
+
+Start the main program:
+
+```bash
+go run ./cmd/main.go
+```
+
+The AGI agent will begin learning how to play chess by executing, reviewing, and refining tasks.
+
+## Sequence Diagram
+
+![Sequence Diagram](./img/agi-golang-flexlm-sequence-diagram.svg)
+
+## Flowchart
+
+![Flowchart](./img/agi-golang-flexlm-flowchart.svg)
+
+## Example Output
+
+```
+======= Objective ======
+I want to learn chess strategies.
+
+======= Refined Objective ======
+...
+
+======= Milestone Objective ======
+Learn the layout of the chessboard and the pieces' movements.
+
+======= Refined Milestone Objective ======
+Understand the chessboard layout, the starting positions of each piece, and the governing rules of movements and captures.
+
+======= Task Result ======
+...
+
+======= Task Evaluation ======
+This is a successful result because it precisely classifies each chess piece, their starting positions on the chessboard, and the rules governing their movements and captures.
+```
+
+## Contributing
+
+Pull requests are welcomed. For substantial changes, kindly open an issue first for discussions.
+
+## License
+
+MIT
